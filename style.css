@@ -1,0 +1,227 @@
+@font-face {
+    src: url("Fonts/Montserrat-VariableFont_wght.ttf");
+    font-family: "Montserrat";
+}
+
+*
+{
+    font-family: Montserrat;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes typing {
+    from{
+        width: 0%;
+    }
+    to{
+      width: 100%;  
+    } 
+    
+  }
+
+  @keyframes blink {
+    0%{
+        border-color: #3e5d47;
+    }
+    50%
+    {
+        border-color: transparent;
+    }
+
+    100%
+    {
+        border-color: #3e5d47;
+    }
+  }
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main
+{
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boardPlace
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 500px;
+}
+
+
+.header
+{
+    margin-left: 50px;
+    width: 29%;
+    height: 100vh;
+    font-weight: 900;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header p{
+    margin-top: -35px;
+    font-size: 20px;
+    font-weight: 400;
+    animation: fadeIn 2s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.header h1
+{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    border-right: 10PX solid #3e5d47;
+    animation: typing 1s steps(10, end) forwards, blink 2s infinite, fadeIn 1s ease-in-out ;
+}
+.board
+{
+    width: 500px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    box-shadow: 0px 0px 20px gray;
+}
+
+.control
+{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+.buttons
+{
+    width: 70%;
+    padding: 20px 0px;
+    display: flex;
+    gap: 20px;
+}
+
+.solutionCounter
+{
+    width: 29%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cordY
+{
+    width: 50px;
+    height: 100%;
+    color: #9f9f9f;
+}
+
+.cordX
+{
+    display: flex;
+    padding-left: 50px;
+    padding-top: 10px;
+    color: #9f9f9f;
+}
+
+span.cordYElement{
+    height: 62.5px;
+}
+
+span.cordXElement
+{
+    width: 62.5px;
+}
+span
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span.odd
+{
+    background-color: #FBFADA; 
+}
+span.even
+{
+    background-color: #558062;
+}
+
+span img
+{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+button
+{
+    width: 150px;
+    height: 75px;
+    border-radius: 10px;
+    border: none;
+    background-color: #558062;
+    color: white;
+    font-weight: 700;
+    font-size: 20px ;
+    cursor: pointer;
+}
+
+button.play
+{
+    width: 180px;
+    height: 50px;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #fff;
+    border: #558062 solid;
+    color: #558062;
+}
+
+button:hover
+{
+    transition: 0.5s;
+    background-color:#3e5d47;
+}
+
+button.play:hover
+{
+    transition: 0.25;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px #558062;
+}
+
+
+button:active
+{
+    transition: 0s;
+    transform: scale(0.95);
+    background-color: #2e4233;
+    box-shadow: 0px 0px 20px #558062;
+}
+a
+{
+    text-decoration: none;
+    color: #558062;
+}

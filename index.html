@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N(8)-Queens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="text">
+                <h1>N-Queens</h1>
+                <p>
+                    The N-Queens problem involves placing N chess queens on an N×N chessboard so that no two queens threaten each other, i.e., they cannot share the same row, column, or diagonal. The goal is to find all valid arrangements, typically solved using backtracking algorithms.
+                </p>
+                <a href="Play/play.html">
+                <button class="play">try it your self!</button>
+                </a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="all">
+                <div class="boardPlace">
+                    <div class="cordY" id="cordY">
+
+                    </div>  
+                        <div class="board" id="board">
+
+                        </div>
+
+                </div>
+                <div class="cordX" id="cordX">
+    
+                </div>
+            </div>
+            <div class="control">
+                <div class="buttons">
+                    <button class="prev" onclick="previous()">previous</button>
+                    <button class="next" onclick="next()">Next</button>
+                </div>
+                <span class="solutionCounter" id="solutionCounter">1/92</span>
+            </div>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+</body>
+</html>

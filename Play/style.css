@@ -1,0 +1,84 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../Fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+*
+{
+    font-family: Montserrat;
+    user-select: none;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.all
+{
+    width: 550px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.boardPlace
+{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.board
+{
+    width: 500px;
+    height: 100%;
+    display: grid;
+    box-shadow: 0px 0px 20px gray;
+}
+
+span.odd
+{
+    background-color: #FBFADA;
+}
+
+span.even
+{
+    background-color: #558062;
+}
+
+.cordY
+{
+    width: 50px;
+    height: 100%;
+    color: #9f9f9f;
+}
+
+.cordX
+{
+    width: 500px;
+    padding-left: 50px;
+    padding-top: 10px;
+    color: #9f9f9f;
+    display: flex;
+}
+
+span
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.odd,.even{
+    color: rgba(0, 0, 0, 0.377);
+}
+span img{
+    width: 80%;
+}
+
