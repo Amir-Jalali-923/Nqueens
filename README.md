@@ -64,3 +64,6 @@ Threat Detection: The updateBoard() function identifies threatened squares and u
 Threat Marking: The markThreat() function marks squares threatened by a queen's placement, considering vertical, horizontal, and diagonal threats.
 
 We hope this README provides you with a clear understanding of the N-Queens Solver and N-Queens game. If you have any questions, feedback, or encounter any issues, please don't hesitate to reach out. Thank you for exploring our N-Queens Website!
+
+## Contact:
+Amir.jalali.50500@gmail.com
